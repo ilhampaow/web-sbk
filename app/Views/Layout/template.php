@@ -45,6 +45,9 @@
     <script src="<?= base_url('Assets/js/google-map.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/main.js'); ?>"></script>
 
+    <!-- template -->
+    <script src="<?= base_url('Assets/edit/js/main.js'); ?>"></script>
+
 </body>
 
 </html>

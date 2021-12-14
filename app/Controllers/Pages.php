@@ -11,4 +11,11 @@ class Pages extends BaseController
         ];
         return view('Pages/dashboard', $data);
     }
+    public function solusibisnissyariah()
+    {
+        $data = [
+            'title' => 'Solusi Bisnis Syariah'
+        ];
+        return view('pages/solusibisnissyariah', $data);
+    }
 }
