@@ -35,7 +35,6 @@ $routes->get('/', 'Pages::index');
 $routes->get('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
-
 /*
  * --------------------------------------------------------------------
  * Additional Routing
