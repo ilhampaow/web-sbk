@@ -11,62 +11,38 @@
         </div>
     </div>
 </section>
-
-<section class="services">
-    <div class="container">
-        <div class="row justify-content-center align-items-stretch">
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-stretch">
-                <div class="icon-box icon-box-green">
-                    <table>
-                        <tr>
-                            <h4 class="title"><a href="<?= base_url('/'); ?>">Diklat BMT, Koperasi, dan LKM Syariah</a></h4>
-                        </tr>
-                        <tr>
-                            <img src=" <?= base_url('Assets/images/diklat.png'); ?>" class="rounded mx-auto d-block" alt="..." style="height: 115px; width: 100;">
-                        </tr>
-                        <tr>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                        </tr>
-                    </table>
-                    <!-- <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch">
-                        <h4 class="title"><a href="<?= base_url('/'); ?>">Diklat BMT, Koperasi, dan LKM Syariah</a></h4>
-                    </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch" style="padding-top: 10px;">
-                        <img src=" <?= base_url('Assets/images/diklat.png'); ?>" class="rounded mx-auto d-block" alt="..." style="height: 115px; width: 100px;">
-                    </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch maksimum" style="padding-top: 25px;">
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-stretch">
-                <div class="icon-box icon-box-green">
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch">
-                        <h4 class="title"><a href="<?= base_url('/'); ?>">Regulasi Koperasi dan LKM Syariah</a></h4>
-                    </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch" style="padding-top: 10px;">
-                        <img src=" <?= base_url('Assets/images/regulasi.png'); ?>" class="rounded mx-auto d-block" alt="..." style="height: 115px; width: 100px;">
-                    </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch" style="padding-top: 25px;">
-                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+<section>
+    <div class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Solusi Bisnis <em>Syariah</em></h2>
+                        <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3 d-flex justify-content-center align-items-stretch">
-                <div class="icon-box icon-box-green">
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch">
-                        <h4 class="title"><a href="<?= base_url('/'); ?>">Fatwa DSN MUI</a></h4>
+                <?php $i = 1; ?>
+                <?php foreach ($solusibisnis as $bisnis) : ?>
+                    <div class="col-md-4">
+                        <div class="service-item my-auto">
+                            <img class="mx-auto d-flex" src="/Assets/images/<?= $bisnis['icon']; ?>" alt="">
+                            <div class="down-content">
+                                <h4><?= $bisnis['nama_produk']; ?></h4>
+                                <p><?= $bisnis['deskripsi']; ?></p>
+                                <?php if ($i == 1) { ?>
+                                    <a href="/diklat/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+                                <?php } elseif ($i == 2) { ?>
+                                    <a href="/regulasi/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+                                <?php } else { ?>
+                                    <a href="/fatwa/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+                                <?php }
+                                $i++ ?>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch" style="padding-top: 10px;">
-                        <img src=" <?= base_url('Assets/images/fatwa.png'); ?>" class="rounded mx-auto d-block" alt="..." style="height: 115px; width: 100px;">
-                    </div>
-                    <div class="col-md-12 col-lg-12 d-flex justify-content-center align-items-stretch" style="padding-top: 25px;">
-                        <p class=" description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
-
     </div>
-</section><!-- End Services Section -->
+</section>
 <?= $this->endSection('content'); ?>

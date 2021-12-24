@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?= base_url('Assets/css/magnific-popup.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('Assets/css/flaticon.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('Assets/css/style.css'); ?>">
+
 </head>
 
 <body>
@@ -30,6 +31,11 @@
         </svg></div>
 
 
+    <script src="<?= base_url('Assets/js/custom.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/accordions.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/jquery.singlePageNav.min.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/owl.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/slick.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/jquery.min.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/popper.min.js'); ?>"></script>
@@ -45,9 +51,19 @@
     <script src="<?= base_url('Assets/js/google-map.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/main.js'); ?>"></script>
 
+
     <!-- template -->
     <script src="<?= base_url('Assets/edit/js/main.js'); ?>"></script>
-
+    <script language="text/Javascript">
+        cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+        function clearField(t) { //declaring the array outside of the
+            if (!cleared[t.id]) { // function makes it static and global
+                cleared[t.id] = 1; // you could use true and false, but that's more typing
+                t.value = ''; // with more chance of typos
+                t.style.color = '#fff';
+            }
+        }
+    </script>
 </body>
 
 </html>
