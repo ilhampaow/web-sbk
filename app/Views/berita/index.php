@@ -57,9 +57,9 @@
           <img src="<?= base_url('Assets/images/about-2.jpg') ?>" class="float-left mr-4" width="175" height="175" alt="">
           <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
 
-          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca...</a></p>
+          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca . . .</a></p>
         </article>
-
+        <hr class="featurette-divider">
         <article class="blog-post">
           <h2 class="blog-post-title">Another blog post</h2>
           <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
@@ -67,9 +67,9 @@
           <img src="<?= base_url('Assets/images/about-2.jpg') ?>" class="float-left mr-4" width="175" height="175" alt="">
           <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
 
-          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca...</a></p>
+          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca . . .</a></p>
         </article>
-
+        <hr class="featurette-divider">
         <article class="blog-post">
           <h2 class="blog-post-title">Another blog post</h2>
           <p class="blog-post-meta">December 23, 2020 by <a href="#">Jacob</a></p>
@@ -77,11 +77,11 @@
           <img src="<?= base_url('Assets/images/about-2.jpg') ?>" class="float-left mr-4" width="175" height="175" alt="">
           <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text.</p>
 
-          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca...</a></p>
+          <p class="text-justify">This is some additional paragraph placeholder content. It has been written to fill the available space and show how a longer snippet of text affects the surrounding content. We'll repeat it often to keep the demonstration flowing, so be on the lookout for this exact same string of text. <a href="">Lanjutkan Baca . . .</a></p>
         </article>
 
         <hr class="featurette-divider">
-        <nav class="blog-pagination mb-2" aria-label="Pagination">
+        <nav class="blog-pagination mb-3" aria-label="Pagination">
           <a class="btn btn-outline-primary" href="#">Older</a>
           <a class="btn btn-outline-secondary disabled">Newer</a>
         </nav>
@@ -97,18 +97,18 @@
           <div class="p-4">
             <h4 class="fst-italic">Archives</h4>
             <ol class="list-unstyled mb-0">
+              <li><a href="#">December 2021</a></li>
+              <li><a href="#">November 2021</a></li>
+              <li><a href="#">October 2021</a></li>
+              <li><a href="#">September 2021</a></li>
+              <li><a href="#">August 2021</a></li>
+              <li><a href="#">July 2021</a></li>
+              <li><a href="#">June 2021</a></li>
+              <li><a href="#">May 2021</a></li>
+              <li><a href="#">April 2021</a></li>
               <li><a href="#">March 2021</a></li>
               <li><a href="#">February 2021</a></li>
               <li><a href="#">January 2021</a></li>
-              <li><a href="#">December 2020</a></li>
-              <li><a href="#">November 2020</a></li>
-              <li><a href="#">October 2020</a></li>
-              <li><a href="#">September 2020</a></li>
-              <li><a href="#">August 2020</a></li>
-              <li><a href="#">July 2020</a></li>
-              <li><a href="#">June 2020</a></li>
-              <li><a href="#">May 2020</a></li>
-              <li><a href="#">April 2020</a></li>
             </ol>
           </div>
 

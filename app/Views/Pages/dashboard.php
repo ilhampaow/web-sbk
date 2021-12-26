@@ -102,7 +102,7 @@
 <section class="ftco-section bg-light ftco-no-pt">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-6 d-flexd-none d-sm-block services align-self-stretch px-4 ftco-animate">
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="img mb-4 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
       </div>
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
