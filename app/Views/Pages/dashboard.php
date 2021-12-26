@@ -49,37 +49,49 @@
   </div>
 </div>
 
-<section class="ftco-section ftco-no-pt bg-light">
+
+<section class="ftco-section bg-light">
   <div class="container">
-    <div class="row d-flex no-gutters">
-      <div class="col-md-6 d-flex">
-        <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0" style="background-image:url(Assets/images/about.jpg);">
+    <div class="row justify-content-center pb-5 mb-3">
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <span class="subheading">Layanan Yang Tersedia</span>
+        <h2>Jadikan pengalaman Kamu lebih baik hari ini</h2>
+      </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry align-self-stretch">
+          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+          </a>
+          <div class="text p-4">
+            <div class="meta mb-2">
+              <h3 class="text-center fw-bold text-dark">Diklat BMT, Koperasi, dan LKM Syariah</h3>
+            </div>
+            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+          </div>
         </div>
       </div>
-      <div class="col-md-6 pl-md-5 py-md-5">
-        <div class="heading-section pl-md-4 pt-md-5">
-          <span class="subheading">Welcome to Accounting</span>
-          <h2 class="mb-4">We Are the Best Accounting Agency</h2>
-        </div>
-        <div class="services-2 w-100 d-flex">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-wealth"></span></div>
-          <div class="text pl-4">
-            <h4>Diklat BMT, Koperasi, dan LKM Syariah</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry align-self-stretch">
+          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_2.jpg');">
+          </a>
+          <div class="text p-4">
+            <div class="meta mb-2">
+              <h3 class="text-center fw-bold text-dark">Regulasi Koperasi dan LKM Syariah</h3>
+            </div>
+            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
           </div>
         </div>
-        <div class="services-2 w-100 d-flex">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-teamwork"></span></div>
-          <div class="text pl-4">
-            <h4>Regulasi Koperasi dan LKM Syariah</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="services-2 w-100 d-flex">
-          <div class="icon d-flex align-items-center justify-content-center"><span class="flaticon-accountant"></span></div>
-          <div class="text pl-4">
-            <h4>Fatwa DSN MUI</h4>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+      </div>
+      <div class="col-md-4 d-flex ftco-animate">
+        <div class="blog-entry align-self-stretch">
+          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_3.jpg');">
+          </a>
+          <div class="text p-4">
+            <div class="meta mb-2">
+              <h3 class="text-center fw-bold text-dark">Fatwa DSN MUI</h3>
+            </div>
+            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
           </div>
         </div>
       </div>
@@ -90,47 +102,49 @@
 <section class="ftco-section bg-light ftco-no-pt">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+      <div class="col-md-6 col-lg-6 d-flexd-none d-sm-block services align-self-stretch px-4 ftco-animate">
+        <div class="img mb-4 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
+      </div>
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
+        <div class="d-block">
+          <div class="media-body">
+            <h1 class="heading">Accounting</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestias odio doloribus error labore, ipsum magni necessitatibus quam aliquam similique reiciendis aliquid vitae neque eaque maiores incidunt fugiat sapiente pariatur laudantium. Laborum eligendi quas fugiat molestias. Aut perspiciatis temporibus sapiente consectetur, unde nisi, eius explicabo quis nulla magni ratione a?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
           <div class="icon d-flex mr-2">
             <span class="flaticon-accounting-1"></span>
           </div>
           <div class="media-body">
-            <h3 class="heading">Accounting</h3>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <h1 class="heading">Accounting</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad consectetur quaerat excepturi libero, soluta eligendi amet nesciunt omnis voluptas explicabo voluptatum recusandae ab voluptatibus distinctio facere, dolore eveniet repellat consequuntur illo dicta similique incidunt nulla illum. Cupiditate dicta, molestiae minus numquam tempora laboriosam eum ad in quae nobis et esse.</p>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-        <div class="d-block">
-          <div class="icon d-flex mr-2">
-            <span class="flaticon-tax"></span>
-          </div>
-          <div class="media-body">
-            <h3 class="heading">Tax, Compliance &amp; Payroll</h3>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-          </div>
-        </div>
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
+        <div class="img mb-2 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
       </div>
-      <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
-        <div class="d-block">
-          <div class="icon d-flex mr-2">
-            <span class="flaticon-loan"></span>
-          </div>
-          <div class="media-body">
-            <h3 class="heading">Financial Services</h3>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-          </div>
-        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row">
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
+        <div class="img mb-4 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
       </div>
-      <div class="col-md-6 col-lg-3 d-flex services align-self-stretch px-4 ftco-animate">
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
-          <div class="icon d-flex mr-2">
-            <span class="flaticon-budget"></span>
-          </div>
           <div class="media-body">
-            <h3 class="heading">Growth &amp; Funding Access</h3>
-            <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+            <h1 class="heading">Accounting</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab dolor, natus doloribus ratione, laborum exercitationem quo sapiente nesciunt doloremque amet perferendis veniam. Vero fuga alias quas nihil error aliquam quia! Ab, alias repudiandae? Provident illum laudantium minus! Perferendis tempora nostrum minus maxime excepturi, veniam inventore sed fugiat rerum iste.</p>
           </div>
         </div>
       </div>
