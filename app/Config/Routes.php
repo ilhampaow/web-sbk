@@ -35,8 +35,7 @@ $routes->get('/', 'Pages::index');
 
 // Solusi Bisnis
 $routes->get('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
-<<<<<<< HEAD
-// <<<<<<< HEAD
+
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 // =======
@@ -46,14 +45,11 @@ $routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
 // Berita
 $routes->get('/berita', 'Berita::index');
 
-// >>>>>>> github/master
-=======
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 
 // Berita
 $routes->get('/berita', 'Berita::index');
->>>>>>> 1e6eadf28c9ad691105b0d629f8576ef1dad0fac
 /*
  * --------------------------------------------------------------------
  * Additional Routing

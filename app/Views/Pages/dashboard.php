@@ -323,7 +323,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
@@ -337,7 +336,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
@@ -351,7 +349,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
@@ -365,7 +362,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
@@ -379,7 +375,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
@@ -393,7 +388,6 @@
                 <div class="meta mb-2">
                   <div><a href="#">March 31, 2020</a></div>
                   <div><a href="#">Admin</a></div>
-                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
                 <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
