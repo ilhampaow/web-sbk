@@ -1,0 +1,36 @@
+<?php $i = 1; ?>
+<?php foreach ($diklat as $d) : ?>
+    <article id="tabs-<?= $i++ ?>">
+        <?php $id_diklat = $d['id_diklat'] ?>
+        <?php $dokumentasi = $dok_diklat->where([
+            'diklat_source_id' => $id_diklat
+        ])->findAll() ?>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <?php $a = 1; ?>
+                <?php foreach ($dokumentasi as $dok) : ?>
+                    <?php if ($a == 1) { ?>
+                        <div class="item active">
+                            <img src="/Assets/images/<?= $dok['gambar']; ?>" class="d-block w-100" alt="...">
+                        </div>
+                    <?php } else { ?>
+                        <div class="item">
+                            <img src="/Assets/images/<?= $dok['gambar']; ?>" class="d-block w-100" alt="...">
+                        </div>
+                    <?php } ?>
+                    <?php $a++; ?>
+                <?php endforeach; ?>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <h4><?= $d['produk'] ?></h4>
+        <p><?= $d['deskripsi'] ?></p>
+    </article>
+<?php endforeach; ?>
