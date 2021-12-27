@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?= base_url('Assets/css/magnific-popup.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('Assets/css/flaticon.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('Assets/css/style.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -41,11 +42,11 @@
         </svg></div>
 
 
-    <script src="<?= base_url('Assets/js/custom.js'); ?>"></script>
-    <script src="<?= base_url('Assets/js/accordions.js'); ?>"></script>
-    <script src="<?= base_url('Assets/js/jquery.singlePageNav.min.js'); ?>"></script>
-    <script src="<?= base_url('Assets/js/owl.js'); ?>"></script>
-    <script src="<?= base_url('Assets/js/slick.js'); ?>"></script>
+    <!-- <script src="<?= base_url('Assets/js/custom.js'); ?>"></script> -->
+    <!-- <script src="<?= base_url('Assets/js/accordions.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/jquery.singlePageNav.min.js'); ?>"></script> -->
+    <!-- <script src="<?= base_url('Assets/js/owl.js'); ?>"></script>
+    <script src="<?= base_url('Assets/js/slick.js'); ?>"></script> -->
     <script src="<?= base_url('Assets/js/jquery.min.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/jquery-migrate-3.0.1.min.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/popper.min.js'); ?>"></script>
@@ -60,6 +61,8 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="<?= base_url('Assets/js/google-map.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/main.js'); ?>"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
 
     <script src="<?= base_url('Assets/js/custom.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/jquery.singlePageNav.min.js'); ?>"></script>
