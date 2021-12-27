@@ -12822,5 +12822,27 @@ textarea.form-control {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* split text */
+.split-text {
+  -webkit-columns: 250px 2;
+  -moz-columns: 250px 2;
+  columns: 250px 2;
+  -webkit-cokumn-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+  border-radius: 8px;
+}
+
+.accordion-item {
+  box-shadow: 0 2px 8px 0 rgba(48, 49, 48, 0.8);
+}
+
+.accordicard-header {
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 20px;
 }

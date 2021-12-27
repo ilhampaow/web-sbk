@@ -12,4 +12,13 @@ class Berita extends BaseController
 
     return view('berita/index', $data);
   }
+
+  public function detail()
+  {
+    $data = [
+      'title' => 'Detail | USSI-SBK'
+    ];
+
+    return view('berita/detail', $data);
+  }
 }
