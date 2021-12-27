@@ -13,6 +13,14 @@
 </section>
 <section class="services">
     <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-heading">
+                    <h2>Fatwa DSN <em>MUI</em></h2>
+                    <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
+                </div>
+            </div>
+        </div>
         <table id="fatwa" class="table table-striped table-bordered" style="width:100%">
             <thead class="table-primary">
                 <tr>

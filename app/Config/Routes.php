@@ -44,6 +44,7 @@ $routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
 
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
+$routes->get('/Solusikomunitas/(:segment)', 'Solusikomunitas::index/$1');
 
 // Berita
 $routes->get('/berita', 'Berita::index');

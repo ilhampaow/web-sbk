@@ -21,17 +21,13 @@
                 </div>
             </div>
         </div>
-        <div class="w3-row d-flex justify-content-center" style="text-align: center;">
-            <a class="col-md-4 d-flex justify-content-center" href="javascript:void(0)" onclick="openCity(event, 'regulasi-koperasi');">
-                <div class="col-md-12 tablink w3-bottombar w3-hover-light-grey w3-padding">Regulasi Koperasi</div>
-            </a>
-            <a class="col-md-4 d-flex justify-content-center" href="javascript:void(0)" onclick="openCity(event, 'regulasi-lkms');">
-                <div class="col-md-12 tablink w3-bottombar w3-hover-light-grey w3-padding">Regulasi LKM Syariah</div>
-            </a>
+        <div class="tab d-flex justify-content-center">
+            <button class="tablinks active" onclick="openCity(event, 'Regulasi-Koperasi')">Regulasi Koperasi</button>
+            <button class="tablinks" onclick="openCity(event, 'Regulasi-LKMS')">Regulasi LKMS</button>
         </div>
-        <div id="regulasi-koperasi" class="w3-container city mt-5" style="display:active">
+        <div id="Regulasi-Koperasi" class="tabcontent card" style="display: block;">
             <table id="regulasikoperasi" class="table table-striped table-bordered" style="width:100%">
-                <thead class="table-success">
+                <thead class="table">
                     <tr>
                         <th style="text-align: center;">No</th>
                         <th style="text-align: center;">Judul</th>
@@ -45,12 +41,12 @@
                             <td><?= $reg_kop['id_regulasi_kop']; ?></td>
                             <td><?= $reg_kop['judul']; ?></td>
                             <td><?= $reg_kop['deskripsi']; ?></td>
-                            <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>" class="btn btn-success" role="button" data-bs-toggle="button">Details</a></td>
+                            <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
                         </tr>
                     <?php endforeach;  ?>
             </table>
         </div>
-        <div id="regulasi-lkms" class="w3-container city mt-5" style="display:none">
+        <div id="Regulasi-LKMS" class="tabcontent card">
             <table id="regulasilkms" class="table table-striped table-bordered" style="width:100%">
                 <thead class="table-success">
                     <tr>
@@ -66,7 +62,7 @@
                             <td><?= $reg_lkms['id_regulasi_lkms']; ?></td>
                             <td><?= $reg_lkms['judul']; ?></td>
                             <td><?= $reg_lkms['deskripsi']; ?></td>
-                            <td style="text-align: center;"><a href="<?= $reg_lkms['link'] ?>" class="btn btn-primary" role="button" data-bs-toggle="button">Details</a></td>
+                            <td style="text-align: center;"><a href="<?= $reg_lkms['link'] ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
                         </tr>
                     <?php endforeach; ?>
             </table>
