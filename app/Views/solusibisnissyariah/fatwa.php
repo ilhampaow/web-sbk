@@ -1,139 +1,41 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('/Assets/images/bg-diklat.jpg');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('Assets/images/bg-fatwa.jpg') ?>');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end">
             <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Services <i class="ion-ios-arrow-forward"></i></span></p>
-                <h1 class="mb-0 bread">Services</h1>
+                <p class="breadcrumbs mb-2"><span class="mr-2"><a href="<?= base_url('/'); ?>">USSI-SBK<i class="ion-ios-arrow-forward"></i></a></span></p>
+                <h1 class="mb-0 bread">Fatwa DSN MUI</h1>
             </div>
         </div>
     </div>
 </section>
-<section class="ftco-section">
+<section class="services">
     <div class="container">
-        <div id="demo" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ul class="carousel-indicators">
-                <?php
-                $jml_pernyataan = count($id_pernyataan);
-                for ($i = 0; $i < $jml_pernyataan; $i = $i + 3) {
-                    if ($i == 0) {
-                ?>
-                        <li data-target="#demo" data-slide-to="<?= $a = $i / 3 ?>" class="active"></li>
-                    <?php } else { ?>
-                        <li data-target="#demo" data-slide-to="<?= $a = $i / 3 ?>" class=""></li>
-                    <?php } ?>
-                <?php } ?>
-            </ul>
-
-            <!-- The slideshow -->
-            <div class="carousel-inner">
-                <?php
-                for ($i = 0; $i < $jml_pernyataan;) {
-                    $jml_field = count($pernyataan[$i]);
-                    if ($pernyataan[$i]['id_pernyataan'] == 1) { ?>
-                        <div class="carousel-item active">
-                            <?php for ($j = 0; $j < $jml_field; $j++) {
-                            ?>
-                                <div class="col-md-4 services align-self-stretch ">
-                                    <div class="d-block card justify-content-center">
-                                        <div class="media-body">
-                                            <h3 class="heading">Ke - <?= $pernyataan[$i]['id_pernyataan'] ?></h3>
-                                            <p><?= $pernyataan[$i]['pernyataan'] ?></p>
-                                            <p><?= $pernyataan[$i++]['sumber'] ?></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                        </div>
-                    <?php } else { ?>
-                        <div class="carousel-item">
-                            <?php for ($j = 0; $j < $jml_field; $j++) {
-                            ?>
-                                <div class="col-md-4 services align-self-stretch ">
-                                    <div class="d-block card justify-content-center">
-                                        <div class="media-body">
-                                            <h3 class="heading">Ke - <?= $pernyataan[$i]['id_pernyataan'] ?></h3>
-                                            <p><?= $pernyataan[$i]['pernyataan'] ?></p>
-                                            <p><?= $pernyataan[$i++]['sumber'] ?></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            <?php } ?>
-                        </div>
-                    <?php } ?>
-                <?php } ?>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="carousel-control-prev d-flex" href="#demo" data-slide="prev" style="color: gray;">
-                <span class="carousel-control-prev-icon"></span>
-            </a>
-            <a class="carousel-control-next d-flex" href="#demo" data-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </a>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="single-services">
-        <div class="container">
-            <div class="row" id="tabs">
-                <div class="col-md-4">
-                    <ul>
-                        <?php $i = 1; ?>
-                        <?php foreach ($diklat as $d) : ?>
-                            <li><a href='#tabs-<?= $i++ ?>'><?= $d['produk']; ?><i class="fa fa-angle-right"></i></a></li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div class="col-md-8">
-                    <section class='tabs-content'>
-                        <?php $i = 1; ?>
-                        <?php foreach ($diklat as $d) : ?>
-                            <article id="tabs-<?= $i ?>">
-                                <?php $id_diklat = $d['id_diklat'] ?>
-                                <?php $dokumentasi = $dok_diklat->where([
-                                    'diklat_source_id' => $id_diklat
-                                ])->findAll() ?>
-                                <div id="myCarousel-<?= $i ?>" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <?php $a = 1; ?>
-                                        <?php foreach ($dokumentasi as $dok) : ?>
-                                            <?php if ($a == 1) { ?>
-                                                <div class="item active">
-                                                    <img src="/Assets/images/<?= $dok['gambar']; ?>" class="d-block" alt="...">
-                                                </div>
-                                            <?php } else { ?>
-                                                <div class="item">
-                                                    <img src="/Assets/images/<?= $dok['gambar']; ?>" class="d-block" alt="...">
-                                                </div>
-                                            <?php } ?>
-                                            <?php $a++; ?>
-                                        <?php endforeach; ?>
-                                    </div>
-                                    <a class="left carousel-control" href="#myCarousel-<?= $i ?>" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#myCarousel-<?= $i++ ?>" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </div>
-                                <h4><?= $d['produk'] ?></h4>
-                                <p><?= $d['deskripsi'] ?></p>
-                            </article>
-                        <?php endforeach; ?>
-                    </section>
-                </div>
-            </div>
-        </div>
+        <table id="fatwa" class="table table-striped table-bordered" style="width:100%">
+            <thead class="table-primary">
+                <tr>
+                    <th style="text-align: center;">No</th>
+                    <th style="text-align: center;">Nomor Fatwa</th>
+                    <th style="text-align: center;">Tentang</th>
+                    <th style="text-align: center;">Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($fatwa_dsn_mui as $fatwa_dsn_mui) : ?>
+                    <tr>
+                        <td><?= $fatwa_dsn_mui['id_fatwa_dsn_mui']; ?></td>
+                        <td><?= $fatwa_dsn_mui['nomor_fatwa']; ?></td>
+                        <td><?= $fatwa_dsn_mui['tentang']; ?></td>
+                        <td style="text-align: center;"><a href="<?= $fatwa_dsn_mui['link'] ?>" class="btn btn-primary" role="button" data-bs-toggle="button">Details</a></td>
+                    </tr>
+                <?php endforeach; ?>
+        </table>
     </div>
 </section>
 <section>
     <?= $this->include('layout/produklainnya'); ?>
 </section>
+
 <?= $this->endSection('content'); ?>

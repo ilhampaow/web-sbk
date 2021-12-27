@@ -31,6 +31,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <!-- batas table -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
+    <script src="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css"></script>
+
+
 </head>
 
 <body>
@@ -86,6 +91,7 @@
         }
     </script>
 
+    <!-- fatawa dan regulasi -->
     <script>
         function openCity(evt, cityName) {
             var i, x, tablinks;
@@ -101,6 +107,24 @@
             evt.currentTarget.firstElementChild.className += " w3-border-red";
         }
     </script>
+
+    <!-- batas table -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#regulasikoperasi').DataTable();
+        });
+        $(document).ready(function() {
+            $('#regulasilkms').DataTable();
+        });
+        $(document).ready(function() {
+            $('#fatwa').DataTable();
+        });
+    </script>
+
 
 </body>
 

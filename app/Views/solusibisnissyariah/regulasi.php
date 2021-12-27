@@ -30,68 +30,45 @@
             </a>
         </div>
         <div id="regulasi-koperasi" class="w3-container city mt-5" style="display:active">
-            <table class="table">
-                <thead class="table-dark">
+            <table id="regulasikoperasi" class="table table-striped table-bordered" style="width:100%">
+                <thead class="table-success">
                     <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Judul</th>
-                        <th colspan="3">Deskripsi</th>
-                        <th scope="col">Detail</th>
+                        <th style="text-align: center;">No</th>
+                        <th style="text-align: center;">Judul</th>
+                        <th style="text-align: center;">Deskripsi</th>
+                        <th style="text-align: center;">Details</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td colspan="3">Otto</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td colspan="3">Thornton</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Jacob</td>
-                        <td colspan="3">Thornton</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                </tbody>
+                    <?php foreach ($regulasi_kop as $reg_kop) : ?>
+                        <tr>
+                            <td><?= $reg_kop['id_regulasi_kop']; ?></td>
+                            <td><?= $reg_kop['judul']; ?></td>
+                            <td><?= $reg_kop['deskripsi']; ?></td>
+                            <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>" class="btn btn-success" role="button" data-bs-toggle="button">Details</a></td>
+                        </tr>
+                    <?php endforeach;  ?>
             </table>
         </div>
-
         <div id="regulasi-lkms" class="w3-container city mt-5" style="display:none">
-            <table class="table">
-                <thead class="table-dark">
+            <table id="regulasilkms" class="table table-striped table-bordered" style="width:100%">
+                <thead class="table-success">
                     <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Judul</th>
-                        <th colspan="3">Deskripsi</th>
-                        <th scope="col">Detail</th>
+                        <th style="text-align: center;">No</th>
+                        <th style="text-align: center;">Judul</th>
+                        <th style="text-align: center;">Deskripsi</th>
+                        <th style="text-align: center;">Details</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td colspan="3">Otto</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td colspan="3">Thornton</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Jacob</td>
-                        <td colspan="3">Thornton</td>
-                        <td><button type="button" class="btn btn-success">Detail</button></td>
-                    </tr>
-                </tbody>
+                    <?php foreach ($regulasi_lkms as $reg_lkms) : ?>
+                        <tr>
+                            <td><?= $reg_lkms['id_regulasi_lkms']; ?></td>
+                            <td><?= $reg_lkms['judul']; ?></td>
+                            <td><?= $reg_lkms['deskripsi']; ?></td>
+                            <td style="text-align: center;"><a href="<?= $reg_lkms['link'] ?>" class="btn btn-primary" role="button" data-bs-toggle="button">Details</a></td>
+                        </tr>
+                    <?php endforeach; ?>
             </table>
         </div>
     </div>
