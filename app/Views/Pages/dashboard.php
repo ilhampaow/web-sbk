@@ -54,7 +54,7 @@
   <div class="container">
     <div class="row justify-content-center pb-5 mb-3">
       <div class="col-md-7 heading-section text-center ftco-animate">
-        <span class="subheading">Layanan Yang Tersedia</span>
+        <span class="subheading mt-3">Layanan Yang Tersedia</span>
         <h2>Jadikan pengalaman Kamu lebih baik hari ini</h2>
       </div>
     </div>
@@ -101,8 +101,8 @@
 
 <section class="ftco-section bg-light ftco-no-pt">
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
+    <div class="row db-row">
+      <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate dashboard-image">
         <div class="img mb-4 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
       </div>
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
@@ -120,9 +120,6 @@
     <div class="row">
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
-          <div class="icon d-flex mr-2">
-            <span class="flaticon-accounting-1"></span>
-          </div>
           <div class="media-body">
             <h1 class="heading">Accounting</h1>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad consectetur quaerat excepturi libero, soluta eligendi amet nesciunt omnis voluptas explicabo voluptatum recusandae ab voluptatibus distinctio facere, dolore eveniet repellat consequuntur illo dicta similique incidunt nulla illum. Cupiditate dicta, molestiae minus numquam tempora laboriosam eum ad in quae nobis et esse.</p>
@@ -306,153 +303,99 @@
   </div>
 </section>
 
-<section class="ftco-section bg-light">
-  <div class="container">
-    <div class="row justify-content-center pb-5 mb-3">
-      <div class="col-md-7 heading-section text-center ftco-animate">
-        <span class="subheading">News &amp; Blog</span>
-        <h2>Latest news from our blog</h2>
-      </div>
-    </div>
-    <div class="row d-flex">
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <div><a href="#">March 31, 2020</a></div>
-              <div><a href="#">Admin</a></div>
-              <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
-            </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_2.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <div><a href="#">March 31, 2020</a></div>
-              <div><a href="#">Admin</a></div>
-              <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
-            </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_3.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <div><a href="#">March 31, 2020</a></div>
-              <div><a href="#">Admin</a></div>
-              <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
-            </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="ftco-section ftco-no-pb ftco-no-pt bg-light">
-  <div class="container py-5">
-    <div class="row">
-      <div class="col-md-7 d-flex align-items-center">
-        <h2 class="mb-3 mb-sm-0" style="color:black; font-size: 22px;">Sign Up for Your Free 1st Accounting Consultation</h2>
-      </div>
-      <div class="col-md-5 d-flex align-items-center">
-        <form action="#" class="subscribe-form">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control" placeholder="Enter email address">
-            <input type="submit" value="Subscribe" class="submit px-3">
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="ftco-section testimony-section bg-light">
   <div class="overlay"></div>
   <div class="container">
     <div class="row justify-content-center pb-5 mb-3">
-      <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
-        <h2 class="mt-3">Telah Bekerjasama Dengan</h2>
+      <div class="col-md-7 heading-section text-center ftco-animate">
+        <span class="subheading mt-5">News &amp; Blog</span>
+        <h2>Latest news from our blog</h2>
       </div>
     </div>
     <div class="row ftco-animate">
       <div class="col-md-12">
         <div class="carousel-testimony owl-carousel ftco-owl">
           <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <div class="d-flex align-items-center">
-                  <div class="user-img" style="background-image: url(Assets/images/person_1.jpg); width: 100px; height:100px;"></div>
-                  <div class="pl-3">
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <div class="d-flex align-items-center">
-                  <div class="user-img" style="background-image: url(Assets/images/person_1.jpg); width: 100px; height:100px;"></div>
-                  <div class="pl-3">
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <div class="d-flex align-items-center">
-                  <div class="user-img" style="background-image: url(Assets/images/person_1.jpg); width: 100px; height:100px;"></div>
-                  <div class="pl-3">
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <div class="d-flex align-items-center">
-                  <div class="user-img" style="background-image: url(Assets/images/person_1.jpg); width: 100px; height:100px;"></div>
-                  <div class="pl-3">
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
             </div>
           </div>
           <div class="item">
-            <div class="testimony-wrap py-4">
-              <div class="text">
-                <div class="d-flex align-items-center">
-                  <div class="user-img" style="background-image: url(Assets/images/person_1.jpg); width: 100px; height:100px;"></div>
-                  <div class="pl-3">
-                    <p class="name">Roger Scott</p>
-                    <span class="position">Marketing Manager</span>
-                  </div>
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
                 </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="blog-entry align-self-stretch">
+              <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
+              </a>
+              <div class="text p-4">
+                <div class="meta mb-2">
+                  <div><a href="#">March 31, 2020</a></div>
+                  <div><a href="#">Admin</a></div>
+                  <div><a href="#" class="meta-chat"><span class="fa fa-comment"></span> 3</a></div>
+                </div>
+                <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
               </div>
             </div>
           </div>

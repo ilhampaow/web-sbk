@@ -35,17 +35,17 @@ $routes->get('/', 'Pages::index');
 
 // Solusi Bisnis
 $routes->get('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
-<<<<<<< HEAD
+// <<<<<<< HEAD
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
-=======
+// =======
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
 
 // Berita
 $routes->get('/berita', 'Berita::index');
 
->>>>>>> github/master
+// >>>>>>> github/master
 /*
  * --------------------------------------------------------------------
  * Additional Routing
