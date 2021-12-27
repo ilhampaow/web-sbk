@@ -32,7 +32,7 @@
                 <?php if ($i == 1) { ?>
                   <a href="/diklat/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
                 <?php } elseif ($i == 2) { ?>
-                  <a href="/regulasi/<?= $bisnis['slug']; ?>" cla ss="filled-button">Read More</a>
+                  <a href="/regulasi/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
                 <?php } else { ?>
                   <a href="/fatwa/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
                 <?php }

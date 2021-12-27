@@ -4,9 +4,9 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class SolusibisnisModel extends Model
+class bisnisProdukModel extends Model
 {
-    protected $table = 'solusi_bisnis_produk';
+    protected $table = 'bisnis_produk';
     protected $primaryKey = 'solusi_bisnis_id_produk';
     protected $useTimestamps = 'true';
     protected $dateFormat = 'datetime';
