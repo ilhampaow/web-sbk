@@ -35,6 +35,16 @@ $routes->get('/', 'Pages::index');
 
 // Solusi Bisnis
 $routes->get('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
+
+$routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
+$routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
+// =======
+$routes->get('/regulasi/(:segment)', 'Solusibisnis::fatwa/$1');
+$routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
+
+// Berita
+$routes->get('/berita', 'Berita::index');
+
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/Solusikomunitas/(:segment)', 'Solusikomunitas::index/$1');
