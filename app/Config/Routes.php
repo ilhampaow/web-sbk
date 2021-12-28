@@ -42,15 +42,16 @@ $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::regulasi/$1');
 
-// Berita
-$routes->get('/berita', 'Berita::index');
-
 $routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
 $routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 $routes->get('/Solusikomunitas/(:segment)', 'Solusikomunitas::index/$1');
 
 // Berita
 $routes->get('/berita', 'Berita::index');
+$routes->get('/berita/detail', 'Berita::detail');
+
+// Faq
+$routes->get('/faq', 'Faq::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -8,8 +8,13 @@
       <ul class="navbar-nav m-auto">
         <li class="nav-item"><a href="/Solusibisnis/" class="nav-link">Solusi Bisnis Syariah</a></li>
         <li class="nav-item"><a href="/Solusikomunitas/" class="nav-link">Solusi Komunitas</a></li>
+<<<<<<< HEAD
         <li class="nav-item"><a href="/Solusidigital/" class="nav-link">Solusi Digital</a></li>
         <li class="nav-item"><a href="/berita/" class="nav-link">Berita/news</a></li>
+=======
+        <li class="nav-item"><a href="cases.html" class="nav-link">Solusi Digital</a></li>
+        <li class="nav-item"><a href="/berita/" class="nav-link">Berita</a></li>
+>>>>>>> github/master
         <li class="nav-item"><a href="blog.html" class="nav-link">About</a></li>
         <li class="nav-item"><a href="contact.html" class="nav-link">FAQ</a></li>
       </ul>

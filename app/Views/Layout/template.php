@@ -124,7 +124,7 @@
     <script src="<?= base_url('Assets/js/main.js'); ?>"></script>
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="<?= base_url('Assets/js/custom.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/jquery.singlePageNav.min.js'); ?>"></script>
     <script src="<?= base_url('Assets/js/accordions.js'); ?>"></script>
