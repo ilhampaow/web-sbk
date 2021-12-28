@@ -1,6 +1,6 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('Assets/images/bg-fatwa.jpg') ?>');" data-stellar-background-ratio="0.5">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('Assets/images/bg-komunitas.jpg') ?>');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-end">
@@ -204,7 +204,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8 d-flex justify-content-center">
                     <div class="container mr-5 ml-5 mt-2 mb-5">
-                        <div id="bmt-masjid" class="carousel slide" data-ride="carousel">
+                        <div id="bmt-kampus" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
 
@@ -258,7 +258,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8 d-flex justify-content-center">
                     <div class="container mr-5 ml-5 mt-2 mb-5">
-                        <div id="bmt-masjid" class="carousel slide" data-ride="carousel">
+                        <div id="bmt-karyawan" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ul class="carousel-indicators">
 

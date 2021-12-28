@@ -37,7 +37,7 @@
                         <div class="carousel-item active">
                             <?php for ($j = 0; $j < $jml_field; $j++) {
                             ?>
-                                <div class="col-md-4 services align-self-stretch ">
+                                <div class="col-md-4 services align-self-stretch">
                                     <div class="d-block card justify-content-center">
                                         <div class="media-body">
                                             <h3 class="heading">Ke - <?= $pernyataan[$i]['id_pernyataan'] ?></h3>
