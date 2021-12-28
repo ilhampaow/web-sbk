@@ -21,7 +21,7 @@ class Pernyataan extends Migration
       ],
       'sumber' => [
         'type'           => 'VARCHAR',
-        'null'           => '255',
+        'constraint'           => '255',
       ],
       'created_at' => [
         'type'           => 'DATETIME',
@@ -32,12 +32,12 @@ class Pernyataan extends Migration
         'null'           => TRUE,
       ],
     ]);
-    $this->forge->addKey('id_regulasi_kop', true);
-    $this->forge->createTable('regulasi_koperasi');
+    $this->forge->addKey('id_pernyataan', true);
+    $this->forge->createTable('pernyataan');
   }
 
   public function down()
   {
-    $this->forge->dropTable('regulasi_koperasi');
+    $this->forge->dropTable('pernyataan');
   }
 }
