@@ -4,11 +4,13 @@ namespace App\Controllers;
 
 use App\Models\digitalModel;
 use App\Models\digitalProdukModel;
+use App\Models\digitalProdukDokModel;
 
 class Solusidigital extends BaseController
 {
     protected $digital;
     protected $digital_produk;
+    protected $digital_produk_dok;
 
     public function __construct()
     {
@@ -20,13 +22,19 @@ class Solusidigital extends BaseController
     {
         $data = [
             'title' => 'Solusi Digital',
-            'digital' => $this->digital->findAll(),
-            'digital_produk_1' => $this->digital_produk->getDigitalProduk(1),
-            'digital_produk_2' => $this->digital_produk->getDigitalProduk(2),
-            'digital_produk_3' => $this->digital_produk->getDigitalProduk(3),
-            'digital_produk_4' => $this->digital_produk->getDigitalProduk(4),
-            'digital_produk_5' => $this->digital_produk->getDigitalProduk(5),
+            'digital' => $this->digital->findAll()
         ];
         return view('pages/solusidigital', $data);
+    }
+    public function details($slug, $id)
+    {
+        $data = [
+            'title' => 'Solusi Digital',
+            'digital_produk' => $this->digital_produk->getDigitalProduk($slug),
+            'digital_produk_dok' => $this->digital_produk->getDigitalProdukDok($slug, $id),
+            'digital' => $this->digital_produk->getJudulDigitalProduk($slug)
+        ];
+        dd($data['digital_produk_dok']);
+        return view('solusidigital/details', $data);
     }
 }

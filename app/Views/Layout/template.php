@@ -182,7 +182,6 @@
     <!-- index solusi-komunitas -->
     <script>
         function openCity(evt, cityName) {
-            var id_komunitas;
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -199,6 +198,15 @@
     </script>
 
     <!-- solusi digital -->
+    <script>
+        $(function() {
+            $('.ambilDataIdDigital').on('click', function() {
+                const id = $(this).data('id');
+
+                console.log(id);
+            });
+        });
+    </script>
 
 
 </body>
