@@ -29,11 +29,10 @@
 
         <nav class="nav nav-pills nav-fill d-flex justify-content-center my-auto ">
             <?php foreach ($digital_produk as $digital) :  ?>
-                <button class="col-md-4 card nav-link tablinks ambilDataIdDigital" onclick="openCity(event, '<?= $digital['id_digital_produk'] ?>')" data-uu="<?= $digital['id_digital_produk']; ?>">
-                    <a class="my-auto mx-auto"><b><?= $digital['digital_produk'] ?></b></a>
+                <button class="col-md-4 card nav-link tablinks ambilDataIdDigital" onclick="openCity(event, '<?= $digital['id_digital_produk']; ?>')">
+                    <a class="my-auto mx-auto"><b><?= $digital['digital_produk']; ?></b></a>
                 </button>
             <?php endforeach; ?>
-            <p><?= count($digital_produk); ?></p>
 
         </nav>
 
@@ -45,8 +44,66 @@
                         <h3><b><?= $digital['digital_produk']; ?></b></h3>
                     </div>
                 </div>
+                <!-- slider -->
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-2">
+                        <a class="carousel-control" href="#<?= $digital['id_digital_produk']; ?>-<?= $digital['slug']; ?>" data-slide="prev" style="left: 50%;">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </div>
+                    <div id="<?= $digital['id_digital_produk']; ?>-<?= $digital['slug']; ?>" class="carousel slide justify-content-center col-md-8" data-ride="carousel">
+                        <!-- Indicators -->
+                        <?php $a = 0; ?>
+                        <ol class="carousel-indicators">
+                            <?php foreach ($digital_produk_dok as $produk_dok) : ?>
+                                <?php if ($produk_dok['source_id_digital_produk'] == $digital['id_digital_produk']) { ?>
+                                    <?php if ($a == 0) { ?>
+                                        <li data-target="#<?= $digital['id_digital_produk']; ?>-<?= $digital['slug']; ?>" data-slide-to="<?= $produk_dok['id_digital_produk_dok']; ?>" class="active"></li>
+                                        <?php $a++; ?>
+                                    <?php } else { ?>
+                                        <li data-target="#<?= $digital['id_digital_produk']; ?>-<?= $digital['slug']; ?>" data-slide-to="<?= $produk_dok['id_digital_produk_dok']; ?>"></li>
+                                    <?php } ?>
+                                <?php } else if ($produk_dok['source_id_digital_produk'] > $digital['id_digital_produk']) {
+                                    break;
+                                } else {
+                                } ?>
+                            <?php endforeach; ?>
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <?php $b = 0; ?>
+                        <div class="carousel-inner">
+                            <?php foreach ($digital_produk_dok as $produk_dok) : ?>
+                                <?php if ($produk_dok['source_id_digital_produk'] == $digital['id_digital_produk']) { ?>
+                                    <?php if ($b == 0) { ?>
+                                        <div class="item active">
+                                            <img src="/Assets/images/<?= $produk_dok['gambar_produk_dok']; ?>" alt="<?= $produk_dok['gambar_produk_dok']; ?>" style="width:100%;">
+                                        </div>
+                                        <?php $b++; ?>
+                                    <?php } else { ?>
+                                        <div class="item">
+                                            <img src="/Assets/images/<?= $produk_dok['gambar_produk_dok']; ?>" alt="<?= $produk_dok['gambar_produk_dok']; ?>" style="width:100%;">
+                                        </div>
+                                    <?php } ?>
+                                <?php } else if ($produk_dok['source_id_digital_produk'] > $digital['id_digital_produk']) {
+                                    break;
+                                } else {
+                                } ?>
+                            <?php endforeach; ?>
+                        </div>
+                        <!-- Left and right controls -->
+
+                    </div>
+                    <div class="col-md-2">
+                        <a class="carousel-control" href="#<?= $digital['id_digital_produk']; ?>-<?= $digital['slug']; ?>" data-slide="next" style="left: 50%;">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <br>
                 <!-- artikel -->
-                <div class="row d-flex" style="text-align: justify; padding-left: 20px;">
+                <div class="row d-flex" style="text-align: justify; padding-left: 20px; padding-right: 20px;">
                     <p><?= $digital['artikel']; ?></p>
                 </div>
             </div>

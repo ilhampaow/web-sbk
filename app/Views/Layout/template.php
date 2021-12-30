@@ -91,6 +91,9 @@ use App\Models\digitalProdukModel;
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -185,24 +188,6 @@ use App\Models\digitalProdukModel;
 
     <!-- index solusi-komunitas -->
     <script>
-        $(function() {
-            $('.ambilDataIdDigital').on('click', function() {
-                const id = $(this).data('id');
-                $.ajax({
-                    url: 'http://localhost:8080/Solusidigital/details',
-                    data: {
-                        id_digital: id,
-                        nomor: '1'
-                    },
-                    method: 'post',
-                    dataType: 'json',
-                    success: function(data) {
-                        console.log(data);
-                    }
-                });
-            });
-        });
-
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -218,6 +203,8 @@ use App\Models\digitalProdukModel;
 
         }
     </script>
+    <!-- solusi digital -->
+
 
 </body>
 

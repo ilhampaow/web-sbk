@@ -14,11 +14,11 @@ class digitalProdukModel extends Model
     {
         return $this->where('slug', $slug)->findAll();
     }
-    public function getDigitalProdukDok($slug, $id_digital)
+    public function getDigitalProdukDok($slug)
     {
-        $array = array('slug' => $slug, 'source_id_digital_produk' => $id_digital);
+        $array = array('slug' => $slug);
         return $this->db->table('digital_produk')
-            ->join('digital_produk_dok', 'digital_produk.id_digital_produk=digital_produk_dok.source_id_digital_produk')
+            ->join('digital_produk_dok', 'digital_produk.id_digital_produk = digital_produk_dok.source_id_digital_produk')
             ->where($array)
             ->get()->getResultArray();
     }
