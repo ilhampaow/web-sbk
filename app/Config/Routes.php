@@ -33,20 +33,20 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Pages::index');
 
-// Solusi Bisnis
-$routes->get('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
-$routes->get('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
-$routes->get('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
+$routes->add('/Solusidigital/details/(:segment)', 'Solusidigital::details/$1');
+$routes->add('/Solusidigital/(:segment)', 'Solusidigital::details/$1');
 
-//solusi Digital
-$routes->get('/Solusidigital/(:segment)', 'Solusidigital::details/$1');
+// Solusi Bisnis
+$routes->add('/diklat/(:segment)', 'Solusibisnis::diklat/$1');
+$routes->add('/regulasi/(:segment)', 'Solusibisnis::regulasi/$1');
+$routes->add('/fatwa/(:segment)', 'Solusibisnis::fatwa/$1');
 
 // Berita
-$routes->get('/berita', 'Berita::index');
-$routes->get('/berita/detail', 'Berita::detail');
+$routes->add('/berita', 'Berita::index');
+$routes->add('/berita/detail', 'Berita::detail');
 
 // Faq
-$routes->get('/faq', 'Faq::index');
+$routes->add('/faq', 'Faq::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -1,3 +1,7 @@
+<?php
+
+use App\Models\digitalProdukModel;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -181,6 +185,24 @@
 
     <!-- index solusi-komunitas -->
     <script>
+        $(function() {
+            $('.ambilDataIdDigital').on('click', function() {
+                const id = $(this).data('id');
+                $.ajax({
+                    url: 'http://localhost:8080/Solusidigital/details',
+                    data: {
+                        id_digital: id,
+                        nomor: '1'
+                    },
+                    method: 'post',
+                    dataType: 'json',
+                    success: function(data) {
+                        console.log(data);
+                    }
+                });
+            });
+        });
+
         function openCity(evt, cityName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
@@ -196,18 +218,6 @@
 
         }
     </script>
-
-    <!-- solusi digital -->
-    <script>
-        $(function() {
-            $('.ambilDataIdDigital').on('click', function() {
-                const id = $(this).data('id');
-
-                console.log(id);
-            });
-        });
-    </script>
-
 
 </body>
 

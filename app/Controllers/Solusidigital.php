@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\digitalModel;
 use App\Models\digitalProdukModel;
-use App\Models\digitalProdukDokModel;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Solusidigital extends BaseController
 {
@@ -26,15 +26,14 @@ class Solusidigital extends BaseController
         ];
         return view('pages/solusidigital', $data);
     }
-    public function details($slug, $id)
+    public function details($slug)
     {
         $data = [
             'title' => 'Solusi Digital',
             'digital_produk' => $this->digital_produk->getDigitalProduk($slug),
-            'digital_produk_dok' => $this->digital_produk->getDigitalProdukDok($slug, $id),
-            'digital' => $this->digital_produk->getJudulDigitalProduk($slug)
+            'digital_produk_dok' => $this->digital_produk->getDigitalProdukDok($slug, '1'),
+            'digital_dok' => $this->digital_produk->getJudulDigitalProduk($slug)
         ];
-        dd($data['digital_produk_dok']);
         return view('solusidigital/details', $data);
     }
 }

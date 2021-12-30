@@ -18,21 +18,25 @@
                 <div class="section-heading">
                     <h2><em>Solusi Digital</em></h2>
                     <h4>
-                        <b><?= $digital[0]['nama_digital']; ?></b>
+
+                        <b><?= $digital_dok[0]['nama_digital']; ?></b>
                     </h4>
 
                     <!-- <span>Aliquam id urna imperdiet libero mollis hendrerit</span> -->
                 </div>
             </div>
         </div>
+
         <nav class="nav nav-pills nav-fill d-flex justify-content-center my-auto ">
             <?php foreach ($digital_produk as $digital) :  ?>
-                <button class="col-md-4 card nav-link tablinks ambilDataIdDigital" onclick="openCity(event, '<?= $digital['id_digital_produk'] ?>')" data-id="<?= $digital['id_digital_produk']; ?>">
+                <button class="col-md-4 card nav-link tablinks ambilDataIdDigital" onclick="openCity(event, '<?= $digital['id_digital_produk'] ?>')" data-uu="<?= $digital['id_digital_produk']; ?>">
                     <a class="my-auto mx-auto"><b><?= $digital['digital_produk'] ?></b></a>
                 </button>
             <?php endforeach; ?>
+            <p><?= count($digital_produk); ?></p>
 
         </nav>
+
         <?php foreach ($digital_produk as $digital) : ?>
             <div id="<?= $digital['id_digital_produk']; ?>" class="tabcontent card">
                 <!-- judul -->
