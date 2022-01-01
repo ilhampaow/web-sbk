@@ -4522,6 +4522,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-bottom: 0px !important;
 }
 .navbar > .container,
 .navbar > .container-fluid {
@@ -11906,6 +11907,8 @@ textarea.form-control {
   margin: 0;
 }
 .testimony-section .owl-carousel .owl-stage-outer {
+  padding: 20px 0 2em 0;
+  position: relative;
 }
 .testimony-section .owl-nav {
   position: absolute;

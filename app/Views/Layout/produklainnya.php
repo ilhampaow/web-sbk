@@ -1,58 +1,25 @@
 <div class="container mt-5 mb-5">
     <h4>Produk Lainnya</h4>
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="/Assets/images/diklat.jpg" alt="Los Angeles" style="width:100%;">
+    <div class="row ftco-animate">
+        <div class="col-md-12" style="margin-top: 20px; margin-bottom: 40px;">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+                <?php foreach ($jenis_bisnis as $jenis_bisnis) : ?>
+                    <div class="item">
+                        <div class="blog-entry align-self-stretch">
+                            <a href="/diklat/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_bisnis['gambar'] ?>');">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/regulasi.jpg" alt="Los Angeles" style="width:100%;">
+                <?php endforeach; ?>
+                <?php foreach ($jenis_digital as $jenis_digital) : ?>
+                    <div class="item">
+                        <div class="blog-entry align-self-stretch">
+                            <a href="/Solusidigital/<?= $jenis_digital['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_bisnis['gambar_digital_produk'] ?>');">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/fatwa.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="/Assets/images/diklat.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/regulasi.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/fatwa.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="/Assets/images/diklat.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/regulasi.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="/Assets/images/fatwa.jpg" alt="Los Angeles" style="width:100%;">
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </div>

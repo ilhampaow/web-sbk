@@ -9,6 +9,7 @@ use App\Models\pernyataanModel;
 use App\Models\regulasiKoperasiModel;
 use App\Models\regulasiLkmsModel;
 use App\Models\fatwaDsnMuiModel;
+use App\Models\produkUmumModel;
 
 class Solusibisnis extends BaseController
 {
@@ -19,6 +20,7 @@ class Solusibisnis extends BaseController
     protected $regulasi_kop;
     protected $regulasi_lkms;
     protected $fatwa_dsn_mui;
+    protected $jenis_bisnis;
     public function __construct()
     {
         $this->solusibisnisModel = new bisnisProdukModel();
@@ -28,6 +30,7 @@ class Solusibisnis extends BaseController
         $this->regulasi_kop = new regulasiKoperasiModel();
         $this->regulasi_lkms = new regulasiLkmsModel();
         $this->fatwa_dsn_mui = new fatwaDsnMuiModel();
+        $this->jenis_bisnis = new produkUmumModel();
     }
 
     public function index()
@@ -47,7 +50,10 @@ class Solusibisnis extends BaseController
             'diklat' => $diklat,
             'dok_diklat' => $this->dok_diklat,
             'id_pernyataan' => $this->pernyataan->findColumn('id_pernyataan'),
-            'pernyataan' => $this->pernyataan->findAll()
+            'pernyataan' => $this->pernyataan->findAll(),
+            'jenis_bisnis' => $this->jenis_bisnis->getJenisBisnis(),
+            'jenis_digital' => $this->jenis_bisnis->getJenisDigital(),
+            'jenis_komunitas' => $this->jenis_bisnis->getJenisKomunitas()
 
         ];
         return view('solusibisnissyariah/diklat', $data);
