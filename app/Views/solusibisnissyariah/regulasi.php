@@ -41,7 +41,7 @@
                             <td><?= $reg_kop['id_regulasi_kop']; ?></td>
                             <td><?= $reg_kop['judul']; ?></td>
                             <td><?= $reg_kop['deskripsi']; ?></td>
-                            <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
+                            <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>"><button class="btn btn-success btn-sm" type="button">details</button></a></td>
                         </tr>
                     <?php endforeach;  ?>
                 </tbody>
@@ -63,7 +63,7 @@
                             <td><?= $reg_lkms['id_regulasi_lkms']; ?></td>
                             <td><?= $reg_lkms['judul']; ?></td>
                             <td><?= $reg_lkms['deskripsi']; ?></td>
-                            <td style="text-align: center;"><a href="<?= $reg_lkms['link'] ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
+                            <td style="text-align: center;"><a href="<?= $reg_lkms['link']; ?>"><button class="btn btn-success btn-sm" type="button">details</button></a></td>
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
