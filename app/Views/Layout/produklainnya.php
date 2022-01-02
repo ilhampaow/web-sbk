@@ -1,6 +1,6 @@
 <div class="container mt-5 mb-5 card">
     <h4>Produk Lainnya</h4>
-    <div class="row ftco-animate">
+    <div class="row ftco-animate ml-5 mr-5">
         <div class="col-md-12" style="margin-top: 20px; margin-bottom: 40px;">
             <div class="carousel-testimony owl-carousel ftco-owl">
                 <!-- bisnis -->

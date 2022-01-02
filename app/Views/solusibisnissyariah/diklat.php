@@ -12,16 +12,16 @@
   </div>
 </section>
 <section class="ftco-section">
-  <div class="container">
-    <div class="row ftco-animate">
-      <div class="col-md-12" style="margin-top: 20px; margin-bottom: 40px;">
+  <div class="container card mt-5">
+    <div class="row ftco-animate mt-5 mb-5">
+      <div class="col-md-12">
         <div class="carousel-testimony owl-carousel ftco-owl">
           <?php foreach ($pernyataan as $pernyataan) : ?>
             <div class="item">
               <div class="blog-entry align-self-stretch">
                 <a href="https://<?= $pernyataan['link-sumber']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/berita/<?= $pernyataan['gambar'] ?>');height: 150px;">
                 </a>
-                <div class="text p-4 card" style="opacity: 0.2 initial;">
+                <div class="text p-4" style="opacity: 0.2 initial;">
                   <div class="meta">
                     <div><?= $pernyataan['tanggal'] ?></div>
                     <div><a href="https://<?= $pernyataan['sumber']; ?>"><?= $pernyataan['sumber'] ?></a></div>
@@ -39,8 +39,8 @@
 </section>
 <section>
   <div class="single-services">
-    <div class="container">
-      <div class="row" id="tabs">
+    <div class="container card mt-5 mb-5">
+      <div class="row mt-5 mb-5 mr-5 ml-5" id="tabs">
         <div class="col-md-4">
           <ul>
             <?php $i = 1; ?>
