@@ -13,19 +13,19 @@
 </section>
 <section>
   <div class="services">
-    <div class="container">
-      <div class="row">
+    <div class="container card">
+      <div class="row mt-4 mb-4">
         <div class="col-md-12">
           <div class="section-heading">
             <h2>Solusi Bisnis <em>Syariah</em></h2>
-            <span>Aliquam id urna imperdiet libero mollis hendrerit</span>
+            <h4>Ekonomi <em>Syariah</em> kebaikan untuk semua </h4>
           </div>
         </div>
         <?php $i = 1; ?>
         <?php foreach ($solusibisnis as $bisnis) : ?>
           <div class="col-md-4">
             <div class="service-item my-auto">
-              <img class="mx-auto d-flex" src="/Assets/images/<?= $bisnis['gambar']; ?>" alt="">
+              <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $bisnis['gambar']; ?>" alt="">
               <div class="down-content">
                 <h4><?= $bisnis['nama_produk']; ?></h4>
                 <p><?= $bisnis['deskripsi']; ?></p>

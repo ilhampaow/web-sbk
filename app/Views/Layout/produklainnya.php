@@ -1,4 +1,4 @@
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5 card">
     <h4>Produk Lainnya</h4>
     <div class="row ftco-animate">
         <div class="col-md-12" style="margin-top: 20px; margin-bottom: 40px;">
@@ -9,13 +9,13 @@
                     <div class="item">
                         <div class="blog-entry align-self-stretch">
                             <?php if ($i == 1) { ?>
-                                <a href="/diklat/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_bisnis['gambar'] ?>');">
+                                <a href="/diklat/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/icon/<?= $jenis_bisnis['gambar'] ?>');">
                                 </a>
                             <?php } elseif ($i == 2) { ?>
-                                <a href="/regulasi/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_bisnis['gambar'] ?>');">
+                                <a href="/regulasi/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/icon/<?= $jenis_bisnis['gambar'] ?>');">
                                 </a>
                             <?php } else { ?>
-                                <a href="/fatwa/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_bisnis['gambar'] ?>');">
+                                <a href="/fatwa/<?= $jenis_bisnis['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/icon/<?= $jenis_bisnis['gambar'] ?>');">
                                 </a>
                             <?php }
                             $i++ ?>
