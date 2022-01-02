@@ -72,5 +72,8 @@
     </div>
   </div>
 </div>
+<section>
+  <?= $this->include('layout/produklainnya'); ?>
+</section>
 
 <?php $this->endSection() ?>

@@ -25,7 +25,7 @@
         <?php foreach ($solusibisnis as $bisnis) : ?>
           <div class="col-md-4">
             <div class="service-item my-auto">
-              <img class="mx-auto d-flex" src="/Assets/images/<?= $bisnis['icon']; ?>" alt="">
+              <img class="mx-auto d-flex" src="/Assets/images/<?= $bisnis['gambar']; ?>" alt="">
               <div class="down-content">
                 <h4><?= $bisnis['nama_produk']; ?></h4>
                 <p><?= $bisnis['deskripsi']; ?></p>
@@ -44,5 +44,8 @@
       </div>
     </div>
   </div>
+</section>
+<section>
+  <?= $this->include('layout/produklainnya'); ?>
 </section>
 <?= $this->endSection('content'); ?>

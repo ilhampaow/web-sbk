@@ -21,8 +21,8 @@
                 </div>
             </div>
         </div>
-        <table id="fatwa" class="table table-striped table-bordered" style="width:100%">
-            <thead class="table-primary">
+        <table id="fatwa" class="table table-striped table-bordered table-sm" cellspacing="0" style=" width:100%">
+            <thead>
                 <tr>
                     <th style="text-align: center;">No</th>
                     <th style="text-align: center;">Nomor Fatwa</th>
@@ -36,9 +36,10 @@
                         <td><?= $fatwa_dsn_mui['id_fatwa_dsn_mui']; ?></td>
                         <td><?= $fatwa_dsn_mui['nomor_fatwa']; ?></td>
                         <td><?= $fatwa_dsn_mui['tentang']; ?></td>
-                        <td style="text-align: center;"><a href="<?= $fatwa_dsn_mui['link'] ?>" class="btn btn-primary" role="button" data-bs-toggle="button">Details</a></td>
+                        <td style="text-align: center;"><a href="<?= $fatwa_dsn_mui['link'] ?>" class="btn btn-primary btn-sm" role="button" data-bs-toggle="button">Details</a></td>
                     </tr>
                 <?php endforeach; ?>
+            </tbody>
         </table>
     </div>
 </section>

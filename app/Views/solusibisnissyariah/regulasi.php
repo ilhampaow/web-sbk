@@ -26,8 +26,8 @@
             <button class="tablinks" onclick="openCity(event, 'Regulasi-LKMS')">Regulasi LKMS</button>
         </div>
         <div id="Regulasi-Koperasi" class="tabcontent card" style="display: block;">
-            <table id="regulasikoperasi" class="table table-striped table-bordered" style="width:100%">
-                <thead class="table">
+            <table id="regulasikoperasi" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
+                <thead>
                     <tr>
                         <th style="text-align: center;">No</th>
                         <th style="text-align: center;">Judul</th>
@@ -44,11 +44,12 @@
                             <td style="text-align: center;"><a href="<?= $reg_kop['link']; ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
                         </tr>
                     <?php endforeach;  ?>
+                </tbody>
             </table>
         </div>
         <div id="Regulasi-LKMS" class="tabcontent card">
-            <table id="regulasilkms" class="table table-striped table-bordered" style="width:100%">
-                <thead class="table-success">
+            <table id="regulasilkms" class="table table-striped table-bordered table-sm" cellspacing="0" style="width:100%">
+                <thead>
                     <tr>
                         <th style="text-align: center;">No</th>
                         <th style="text-align: center;">Judul</th>
@@ -65,6 +66,7 @@
                             <td style="text-align: center;"><a href="<?= $reg_lkms['link'] ?>" class="btn btn-success btn-sm" role="button" data-bs-toggle="button">Details</a></td>
                         </tr>
                     <?php endforeach; ?>
+                </tbody>
             </table>
         </div>
     </div>

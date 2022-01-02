@@ -37,8 +37,12 @@ class Solusibisnis extends BaseController
     {
         $data = [
             'title' => 'Solusi Bisnis Syariah',
-            'solusibisnis' => $this->solusibisnisModel->getSolusiBisnisProduk()
+            'solusibisnis' => $this->solusibisnisModel->getSolusiBisnisProduk(),
+            'jenis_bisnis' => $this->jenis_bisnis->getJenisBisnis(),
+            'jenis_digital' => $this->jenis_bisnis->getJenisDigital(),
+            'jenis_komunitas' => $this->jenis_bisnis->getJenisKomunitas()
         ];
+        // dd($data['jenis_digital']);
         return view('pages/solusibisnissyariah', $data);
     }
     public function diklat($slug)
@@ -56,6 +60,7 @@ class Solusibisnis extends BaseController
             'jenis_komunitas' => $this->jenis_bisnis->getJenisKomunitas()
 
         ];
+
         return view('solusibisnissyariah/diklat', $data);
     }
     public function regulasi($slug)
@@ -64,7 +69,10 @@ class Solusibisnis extends BaseController
         $data = [
             'title' => 'Solusi Bisnis Syariah Diklat',
             'regulasi_kop' => $this->regulasi_kop->findAll(),
-            'regulasi_lkms' => $this->regulasi_lkms->findAll()
+            'regulasi_lkms' => $this->regulasi_lkms->findAll(),
+            'jenis_bisnis' => $this->jenis_bisnis->getJenisBisnis(),
+            'jenis_digital' => $this->jenis_bisnis->getJenisDigital(),
+            'jenis_komunitas' => $this->jenis_bisnis->getJenisKomunitas()
 
         ];
         return view('solusibisnissyariah/regulasi', $data);
@@ -74,7 +82,10 @@ class Solusibisnis extends BaseController
 
         $data = [
             'title' => 'Solusi Bisnis Syariah Diklat',
-            'fatwa_dsn_mui' => $this->fatwa_dsn_mui->findAll()
+            'fatwa_dsn_mui' => $this->fatwa_dsn_mui->findAll(),
+            'jenis_bisnis' => $this->jenis_bisnis->getJenisBisnis(),
+            'jenis_digital' => $this->jenis_bisnis->getJenisDigital(),
+            'jenis_komunitas' => $this->jenis_bisnis->getJenisKomunitas()
 
         ];
         return view('solusibisnissyariah/fatwa', $data);

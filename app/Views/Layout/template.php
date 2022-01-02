@@ -36,8 +36,7 @@ use App\Models\digitalProdukModel;
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <!-- batas table -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css"></script>
-    <script src="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css"></script>
+    <link rel="stylesheet" href="<?= base_url('Assets/css/data-table.css'); ?>">
 
     <!-- solusi komunitas -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -169,22 +168,7 @@ use App\Models\digitalProdukModel;
     </script>
 
     <!-- batas table -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
-
-    <!-- table fatewa, regulasi -->
-    <script>
-        $(document).ready(function() {
-            $('#regulasikoperasi').DataTable();
-        });
-        $(document).ready(function() {
-            $('#regulasilkms').DataTable();
-        });
-        $(document).ready(function() {
-            $('#fatwa').DataTable();
-        });
-    </script>
+    <script src="<?= base_url('Assets/js/data-table.js'); ?>"></script>
 
     <!-- index solusi-komunitas -->
     <script>

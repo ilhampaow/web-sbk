@@ -5,8 +5,8 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end">
       <div class="col-md-9 ftco-animate pb-5">
-        <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Services <i class="ion-ios-arrow-forward"></i></span></p>
-        <h1 class="mb-0 bread">Services</h1>
+        <p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">USSI-SBK</a></span></p>
+        <h3 class="mb-0 bread" style="color: white;">DIKLAT BMT | DIKLAT KOPERASI | DIKLAT LKM SYARIAH</h3>
       </div>
     </div>
   </div>
@@ -19,15 +19,15 @@
           <?php foreach ($pernyataan as $pernyataan) : ?>
             <div class="item">
               <div class="blog-entry align-self-stretch">
-                <a href="https://<?= $pernyataan['link-sumber']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $pernyataan['gambar'] ?>');">
+                <a href="https://<?= $pernyataan['link-sumber']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/berita/<?= $pernyataan['gambar'] ?>');height: 150px;">
                 </a>
-                <div class="text p-4" style="background-color: #ECFDCD ; opacity: 0.2 initial;">
-                  <div class="meta mb-2">
+                <div class="text p-4 card" style="opacity: 0.2 initial;">
+                  <div class="meta">
                     <div><?= $pernyataan['tanggal'] ?></div>
                     <div><a href="https://<?= $pernyataan['sumber']; ?>"><?= $pernyataan['sumber'] ?></a></div>
                   </div>
-                  <h3 class="heading"><?= $pernyataan['pernyataan']; ?></h3>
-                  <p><a href="<?= $pernyataan['link-sumber']; ?>">lihat details</a></p>
+                  <h5 class="heading" style="color: black;text-align:center; hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;"><?= $pernyataan['pernyataan']; ?></h5>
+                  <p style="text-align: center;"><a href="<?= $pernyataan['link-sumber']; ?>">lihat details</a></p>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@
                   </a>
                 </div>
                 <h4><?= $d['produk'] ?></h4>
-                <p><?= $d['deskripsi'] ?></p>
+                <p style="color: black; text-align: justify;"><?= $d['deskripsi'] ?></p>
               </article>
             <?php endforeach; ?>
           </section>
