@@ -23,55 +23,59 @@
 </section>
 <section class="services ">
     <div class="container">
-
-        <?php $jml_digital = count($digital) ?>
-        <?php for ($i = 0; 0 < $jml_digital;) { ?>
-            <div class="row">
-                <div class="d-flex justify-content-center  ">
-                    <?php if ($i < $jml_digital) { ?>
-                        <div class="col-md-4 mt-5">
-                            <div class="service-item my-auto card">
-                                <img class="mx-auto d-flex" src="/Assets/images/<?= $digital[$i]['gambar']; ?>" alt="">
-                                <div class="down-content text-center ">
-                                    <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                    <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+        <div class="card ">
+            <?php $jml_digital = count($digital) ?>
+            <?php for ($i = 0; 0 < $jml_digital;) { ?>
+                <div class="row mr-4 ml-4 mb-5">
+                    <div class="d-flex justify-content-center  ">
+                        <?php if ($i < $jml_digital) { ?>
+                            <div class="col-md-4 mt-5">
+                                <div class="service-item my-auto card">
+                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
+                                    <div class="down-content text-center ">
+                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
+                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php } else {
-                        echo ("oke");
-                        break;
-                    } ?>
-                    <?php if ($i < $jml_digital) { ?>
-                        <div class="col-md-4 mt-5">
-                            <div class="service-item my-auto card">
-                                <img class="mx-auto d-flex" src="/Assets/images/<?= $digital[$i]['gambar']; ?>" alt="">
-                                <div class="down-content text-center ">
-                                    <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                    <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+                        <?php } else {
+                            echo ("oke");
+                            break;
+                        } ?>
+                        <?php if ($i < $jml_digital) { ?>
+                            <div class="col-md-4 mt-5">
+                                <div class="service-item my-auto card">
+                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
+                                    <div class="down-content text-center ">
+                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
+                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php } else {
-                        break;
-                    } ?>
-                    <?php if ($i < $jml_digital) { ?>
-                        <div class="col-md-4 mt-5">
-                            <div class="service-item my-auto card">
-                                <img class="mx-auto d-flex" src="/Assets/images/<?= $digital[$i]['gambar']; ?>" alt="">
-                                <div class="down-content text-center ">
-                                    <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                    <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+                        <?php } else {
+                            break;
+                        } ?>
+                        <?php if ($i < $jml_digital) { ?>
+                            <div class="col-md-4 mt-5">
+                                <div class="service-item my-auto card">
+                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
+                                    <div class="down-content text-center ">
+                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
+                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    <?php } else {
-                        break;
-                    } ?>
+                        <?php } else {
+                            break;
+                        } ?>
+                    </div>
                 </div>
-            </div>
-        <?php } ?>
+            <?php } ?>
+        </div>
 
     </div>
+</section>
+<section>
+    <?= $this->include('layout/produklainnya'); ?>
 </section>
 <?= $this->endSection('content'); ?>

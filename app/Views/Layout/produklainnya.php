@@ -35,7 +35,7 @@
                 <?php foreach ($jenis_digital as $jenis_digital) : ?>
                     <div class="item">
                         <div class="blog-entry align-self-stretch">
-                            <a href="/Solusidigital/<?= $jenis_digital['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_digital['gambar'] ?>');">
+                            <a href="/Solusidigital/<?= $jenis_digital['slug']; ?>" class="block-20 rounded" style="background-image: url('/Assets/images/icon/<?= $jenis_digital['gambar'] ?>');">
                             </a>
                         </div>
                     </div>
