@@ -2,7 +2,7 @@
 <?= $this->section('content'); ?>
 <div class="hero-wrap">
   <div class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image:url(Assets/images/bg_1.jpg);">
+    <div class="slider-item" style="background-image:url(Assets/images/bg-diklat_2.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -17,7 +17,7 @@
       </div>
     </div>
 
-    <div class="slider-item" style="background-image:url(Assets/images/bg_2.jpg);">
+    <div class="slider-item" style="background-image:url(Assets/images/bg-diklat_4.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div class="slider-item" style="background-image:url(Assets/images/bg_3.jpg);">
+    <div class="slider-item" style="background-image:url(Assets/images/image_6.jpg);">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -51,56 +51,44 @@
 
 
 <section class="ftco-section bg-light">
-  <div class="container">
+  <div class="container card mt-4 mb-4">
     <div class="row justify-content-center pb-5 mb-3">
       <div class="col-md-7 heading-section text-center ftco-animate">
         <span class="subheading mt-3">Layanan Yang Tersedia</span>
         <h2>Jadikan pengalaman Kamu lebih baik hari ini</h2>
       </div>
     </div>
-    <div class="row d-flex">
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_1.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <h3 class="text-center fw-bold text-dark">Diklat BMT, Koperasi, dan LKM Syariah</h3>
+    <div class="row d-flex mb-4 mr-2 ml-2">
+      <?php
+
+      use App\Database\Migrations\Komunitas;
+
+      $i = 1; ?>
+      <?php foreach ($solusibisnis as $bisnis) : ?>
+        <div class="col-md-4">
+          <div class="service-item my-auto">
+            <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $bisnis['gambar']; ?>" alt="">
+            <div class="down-content">
+              <h4><?= $bisnis['nama_produk']; ?></h4>
+              <p><?= $bisnis['deskripsi']; ?></p>
+              <?php if ($i == 1) { ?>
+                <a href="/diklat/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+              <?php } elseif ($i == 2) { ?>
+                <a href="/regulasi/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+              <?php } else { ?>
+                <a href="/fatwa/<?= $bisnis['slug']; ?>" class="filled-button">Read More</a>
+              <?php }
+              $i++ ?>
             </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
           </div>
         </div>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_2.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <h3 class="text-center fw-bold text-dark">Regulasi Koperasi dan LKM Syariah</h3>
-            </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 d-flex ftco-animate">
-        <div class="blog-entry align-self-stretch">
-          <a href="blog-single.html" class="block-20 rounded" style="background-image: url('Assets/images/image_3.jpg');">
-          </a>
-          <div class="text p-4">
-            <div class="meta mb-2">
-              <h3 class="text-center fw-bold text-dark">Fatwa DSN MUI</h3>
-            </div>
-            <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
 
 <section class="ftco-section bg-light ftco-no-pt">
-  <div class="container">
+  <div class="container card mt-4 mb-4">
     <div class="row db-row">
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate dashboard-image">
         <div class="img mb-4 mb-sm-0" style="background-image:url(Assets/images/about-2.jpg);"></div>
@@ -108,21 +96,19 @@
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
           <div class="media-body">
-            <h1 class="heading">Accounting</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, molestias odio doloribus error labore, ipsum magni necessitatibus quam aliquam similique reiciendis aliquid vitae neque eaque maiores incidunt fugiat sapiente pariatur laudantium. Laborum eligendi quas fugiat molestias. Aut perspiciatis temporibus sapiente consectetur, unde nisi, eius explicabo quis nulla magni ratione a?</p>
+            <h1 class="heading"><?= $komunitas[0]['judul'] ?></h1>
+            <p><?= $komunitas[0]['artikel'] ?></p>
           </div>
         </div>
       </div>
     </div>
-
     <hr class="featurette-divider">
-
     <div class="row">
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
           <div class="media-body">
-            <h1 class="heading">Accounting</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad consectetur quaerat excepturi libero, soluta eligendi amet nesciunt omnis voluptas explicabo voluptatum recusandae ab voluptatibus distinctio facere, dolore eveniet repellat consequuntur illo dicta similique incidunt nulla illum. Cupiditate dicta, molestiae minus numquam tempora laboriosam eum ad in quae nobis et esse.</p>
+            <h1 class="heading"><?= $komunitas[1]['judul'] ?></h1>
+            <p><?= $komunitas[1]['artikel'] ?></p>
           </div>
         </div>
       </div>
@@ -140,8 +126,8 @@
       <div class="col-md-6 col-lg-6 d-flex services align-self-stretch px-4 ftco-animate">
         <div class="d-block">
           <div class="media-body">
-            <h1 class="heading">Accounting</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab dolor, natus doloribus ratione, laborum exercitationem quo sapiente nesciunt doloremque amet perferendis veniam. Vero fuga alias quas nihil error aliquam quia! Ab, alias repudiandae? Provident illum laudantium minus! Perferendis tempora nostrum minus maxime excepturi, veniam inventore sed fugiat rerum iste.</p>
+            <h1 class="heading"><?= $komunitas[2]['judul']  ?></h1>
+            <p><?= $komunitas[2]['artikel']  ?></p>
           </div>
         </div>
       </div>
