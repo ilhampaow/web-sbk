@@ -134,7 +134,7 @@
                 </div>
             </div>
             <!-- artikel -->
-            <div class="row d-flex" style="text-align: justify; padding-left: 20px;">
+            <div class="row d-flex" style="text-align: justify; padding-left: 20px; padding-right : 20px;">
                 <p><?= $komunitas[1]['artikel']; ?></p>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <div class="container mt-5 mb-5 card">
     <h4>Produk Lainnya</h4>
-    <div class="row ftco-animate ml-5 mr-5">
+    <div class="row ftco-animate ">
         <div class="col-md-12" style="margin-top: 20px; margin-bottom: 40px;">
             <div class="carousel-testimony owl-carousel ftco-owl">
                 <!-- bisnis -->
@@ -26,7 +26,7 @@
                 <?php foreach ($jenis_komunitas as $jenis_komunitas) : ?>
                     <div class="item">
                         <div class="blog-entry align-self-stretch">
-                            <a href="/Solusikomunitas/" class="block-20 rounded" style="background-image: url('/Assets/images/<?= $jenis_komunitas['gambar'] ?>');">
+                            <a href="/Solusikomunitas/" class="block-20 rounded" style="background-image: url('/Assets/images/icon/<?= $jenis_komunitas['gambar'] ?>');">
                             </a>
                         </div>
                     </div>
