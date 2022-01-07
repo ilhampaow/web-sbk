@@ -1,15 +1,6 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('Assets/images/bg-digital.jpg') ?>');" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row no-gutters slider-text align-items-end">
-            <div class="col-md-9 ftco-animate pb-5">
-                <p class="breadcrumbs mb-2"><span class="mr-2"><a href="<?= base_url('/'); ?>">USSI-SBK<i class="ion-ios-arrow-forward"></i></a></span></p>
-                <h1 class="mb-0 bread">Solusi Digital</h1>
-            </div>
-        </div>
-    </div>
+<section class="hero-wrap hero-wrap-2" style="background-image: url('<?= base_url('Assets/images/frame-digital1.jpg') ?>');" data-stellar-background-ratio="0.5">
 </section>
 <section class="container mt-3 mb-5">
     <div class="row">
@@ -23,54 +14,23 @@
 </section>
 <section class="services ">
     <div class="container">
-        <div class="card ">
-            <?php $jml_digital = count($digital) ?>
-            <?php for ($i = 0; 0 < $jml_digital;) { ?>
-                <div class="row mr-4 ml-4 mb-5">
-                    <div class="d-flex justify-content-center  ">
-                        <?php if ($i < $jml_digital) { ?>
-                            <div class="col-md-4 mt-5">
-                                <div class="service-item my-auto card">
-                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
-                                    <div class="down-content text-center ">
-                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } else {
-                            echo ("oke");
-                            break;
-                        } ?>
-                        <?php if ($i < $jml_digital) { ?>
-                            <div class="col-md-4 mt-5">
-                                <div class="service-item my-auto card">
-                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
-                                    <div class="down-content text-center ">
-                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } else {
-                            break;
-                        } ?>
-                        <?php if ($i < $jml_digital) { ?>
-                            <div class="col-md-4 mt-5">
-                                <div class="service-item my-auto card">
-                                    <img class="mx-auto d-flex" src="/Assets/images/icon/<?= $digital[$i]['gambar']; ?>" alt="">
-                                    <div class="down-content text-center ">
-                                        <h4><?= $digital[$i]['nama_digital']; ?></h4>
-                                        <a href="/Solusidigital/<?= $digital[$i++]['slug']; ?>" class="filled-button">Read More</a>
-                                    </div>
-                                </div>
-                            </div>
-                        <?php } else {
-                            break;
-                        } ?>
+        <div class="card">
+            <?php foreach ($digital as $digital) : ?>
+                <div class="row mt-3 mr-2 mb-3 ml-2">
+                    <div class="col-md-4">
+                        <img class="mx-auto w-100" src="/Assets/images/icon/<?= $digital['gambar']; ?>" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <h4><b><?= $digital['nama_digital']; ?></b></h4>
+                            <p style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical;"><?= $digital['deskripsi']; ?></p>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <a href="/Solusidigital/<?= $digital['slug']; ?>" class="filled-button">Read More</a>
+                        </div>
                     </div>
                 </div>
-            <?php } ?>
+            <?php endforeach; ?>
         </div>
 
     </div>

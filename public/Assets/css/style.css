@@ -4481,7 +4481,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #36cc36b4;
 }
 
 .nav-fill .nav-item {
@@ -10832,9 +10832,9 @@ h5,
   background: #000000;
 }
 .hero-wrap.hero-wrap-2 {
-  height: 400px;
+  height: 500px;
 }
-.hero-wrap.hero-wrap-2 .overlay {
+/* .hero-wrap.hero-wrap-2 .overlay {
   opacity: 0.6;
   background: #1ba12d;
 }
@@ -10844,7 +10844,7 @@ h5,
 .hero-wrap.hero-wrap-2 .slider-text h1 {
   font-weight: 400;
   font-size: 40px;
-}
+} */
 .hero-wrap .slider-text h1 {
   color: #fff;
   line-height: 1.2;
@@ -10948,14 +10948,14 @@ h5,
 }
 .owl-carousel.home-slider {
   position: relative;
-  height: 700px;
+  height: 500px;
   z-index: 0;
 }
 .owl-carousel.home-slider .slider-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 700px;
+  height: 500px;
   position: relative;
   z-index: 0;
   overflow: hidden;
@@ -10977,7 +10977,7 @@ h5,
   }
 }
 .owl-carousel.home-slider .slider-item .slider-text {
-  height: 700px;
+  height: 500px;
   position: relative;
 }
 .owl-carousel.home-slider .slider-item .slider-text .text {
@@ -12849,7 +12849,6 @@ textarea.form-control {
   margin-bottom: 20px;
 }
 
-
 /* tablinks solusi komunitas, fatwa, regulasi, solusi digital */
 body {
   font-family: Arial;
@@ -12890,7 +12889,4 @@ body {
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
-
-
-
 }
